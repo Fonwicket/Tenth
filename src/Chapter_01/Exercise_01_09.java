@@ -1,7 +1,6 @@
 package Chapter_01;
 
-public class Exercise_01_09
-{
+public class Exercise_01_09 {
     public static void main(String[] args)
     {
         /*1.9 (Area and perimeter of a rectangle) Write a program that displays the area and
@@ -11,7 +10,6 @@ public class Exercise_01_09
         */
 
         System.out.println("Area: " + 4.5 * 7.9);
-
 
     }
 }

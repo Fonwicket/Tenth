@@ -8,13 +8,13 @@ import java.util.Scanner;
  * important roles in determining coldness outside. In 2001, the National Weather Service
  * (NWS) implemented the new wind-chill temperature to measure the coldness using
  * temperature and wind speed. The formula is
- *
+ * <p>
  * 35.74 + (0.6215 * temperature) - (35,75 * Math.pow(windSpeed, 0.16)) +
  * (0.4275 * temperature * Math.pow(windSpeed, 0.16))
- *
+ * <p>
  * The formula cannot be used for speeds below 2 mph or temperatures below -58°F or
  * above 41°F
- *
+ * <p>
  * Write a program that prompts the user to enter a temperature between -58F and 41F
  * and a wind speed greater than or equal to 2 and display the wind-chill temperature.
  */
@@ -31,7 +31,9 @@ public class Exercise_02_17 {
         double windSpeed = input.nextDouble();
 
         // Compute the wind-chill temperature
-        double windChill = 35.74 + (0.6215 * temperature) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temperature * Math.pow(windSpeed, 0.16));
+        double windChill =
+                35.74 + (0.6215 * temperature) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temperature * Math
+                        .pow(windSpeed, 0.16));
 
         // Display the results
         System.out.println("The wind chill index is " + windChill);

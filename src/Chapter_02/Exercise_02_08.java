@@ -17,7 +17,6 @@ public class Exercise_02_08 {
         System.out.println("Enter the time zone offset to GMT: ");
         int offset = input.nextInt();
 
-
         // Obtain the total milliseconds since midnight, jan 1, 1970
         long totalMilliseconds = System.currentTimeMillis();
 
@@ -40,8 +39,7 @@ public class Exercise_02_08 {
         long currentHour = (totalHours % 24) + offset;
 
         // Display the results
-        System.out.println("The current time is " + currentHour + ":" + currentMinute + ":" + currentSecond );
-
+        System.out.println("The current time is " + currentHour + ":" + currentMinute + ":" + currentSecond);
 
     }
 }

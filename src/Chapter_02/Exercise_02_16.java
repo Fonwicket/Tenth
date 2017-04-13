@@ -7,7 +7,6 @@ import java.util.Scanner;
  * a hexagon and displays its area. The formula for computing
  * the area of a hexagon is
  * (3 * Math.pow(3,0.5) / 2) * Math.pow(side, 0.5)
- *
  */
 public class Exercise_02_16 {
     public static void main(String[] args) {

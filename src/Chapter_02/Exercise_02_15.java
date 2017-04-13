@@ -6,7 +6,6 @@ import java.util.Scanner;
  * Write a program that prompts the user to enter two points (x1, y1) and (x2, y2) and displays their
  * distance between them. The formula for computing the distance is
  * Math.pow((Math.pow((x2 - x1),2) + Math.pow((y2 - y1),2),0.5)
- *
  */
 public class Exercise_02_15 {
 
@@ -24,7 +23,7 @@ public class Exercise_02_15 {
         double y2 = input.nextDouble();
 
         // Compute distance
-        double distance = Math.pow((Math.pow((x2 - x1),2)) + Math.pow((y2 - y1),2),0.5);
+        double distance = Math.pow((Math.pow((x2 - x1), 2)) + Math.pow((y2 - y1), 2), 0.5);
 
         // Display results
         System.out.println("The distance between the two points is: " + distance);

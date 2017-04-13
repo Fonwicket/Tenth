@@ -1,7 +1,6 @@
 package Chapter_01;
 
-public class Exercise_01_01
-{
+public class Exercise_01_01 {
     public static void main(String[] args)
     {
         // 1.1 Write a program that displays 'Welcome to Java', 'Welcome to Computer Science', and 'Programming is fun.'

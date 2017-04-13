@@ -1,7 +1,6 @@
 package Chapter_01;
 
-public class Exercise_01_04
-{
+public class Exercise_01_04 {
     public static void main(String[] args)
     {
         /* Write a program that displays the following table:

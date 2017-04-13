@@ -1,7 +1,6 @@
 package Chapter_01;
 
-public class Exercise_01_11
-{
+public class Exercise_01_11 {
     public static void main(String[] args)
     {
         /* 1.11 The U.S. Census Bureau projects population based on the following assumptions:
@@ -17,11 +16,16 @@ public class Exercise_01_11
         */
 
         System.out.println("Population year 0: 312032486");
-        System.out.println("Population year 1: " + (312032486 + (1.0 * ((31536000 / 7) - (31536000 / 13) + (31536000 / 45)))));
-        System.out.println("Population year 2: " + (312032486 + (2.0 * ((31536000 / 7) - (31536000 / 13) + (31536000 / 45)))));
-        System.out.println("Population year 3: " + (312032486 + (3.0 * ((31536000 / 7) - (31536000 / 13) + (31536000 / 45)))));
-        System.out.println("Population year 4: " + (312032486 + (4.0 * ((31536000 / 7) - (31536000 / 13) + (31536000 / 45)))));
-        System.out.println("Population year 5: " + (312032486 + (5.0 * ((31536000 / 7) - (31536000 / 13) + (31536000 / 45)))));
+        System.out.println(
+                "Population year 1: " + (312032486 + (1.0 * ((31536000 / 7) - (31536000 / 13) + (31536000 / 45)))));
+        System.out.println(
+                "Population year 2: " + (312032486 + (2.0 * ((31536000 / 7) - (31536000 / 13) + (31536000 / 45)))));
+        System.out.println(
+                "Population year 3: " + (312032486 + (3.0 * ((31536000 / 7) - (31536000 / 13) + (31536000 / 45)))));
+        System.out.println(
+                "Population year 4: " + (312032486 + (4.0 * ((31536000 / 7) - (31536000 / 13) + (31536000 / 45)))));
+        System.out.println(
+                "Population year 5: " + (312032486 + (5.0 * ((31536000 / 7) - (31536000 / 13) + (31536000 / 45)))));
 
     }
 }

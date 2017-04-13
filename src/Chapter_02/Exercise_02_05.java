@@ -22,10 +22,8 @@ public class Exercise_02_05 {
         // Calulate the gratuity
         double gratuity = subtotal * (gratuityrate / 100.0);
 
-
         // Calculate the total
         double total = subtotal + gratuity;
-
 
         // Display the result
         System.out.println("The gratuity is $" + gratuity + " and total is $" + total);

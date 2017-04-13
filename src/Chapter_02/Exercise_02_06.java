@@ -25,7 +25,6 @@ public class Exercise_02_06 {
         int seconddigit = remainingtwodigit % 10;
         int thirthdigit = remainingtwodigit / 10;
 
-
         // Display the result
         System.out.println("The sum of the digits is " + (firstdigit + seconddigit + thirthdigit));
     }

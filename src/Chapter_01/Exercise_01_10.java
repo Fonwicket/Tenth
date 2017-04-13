@@ -1,7 +1,6 @@
 package Chapter_01;
 
-public class Exercise_01_10
-{
+public class Exercise_01_10 {
     public static void main(String[] args)
     {
         /*1.10 (Average speed in miles) Assume a runner runs 14 kilometers in 45 minutes and 30
@@ -10,7 +9,6 @@ public class Exercise_01_10
         */
 
         System.out.println("Average speed: " + (14 * 1.6) / 0.755);
-
 
     }
 }

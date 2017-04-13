@@ -23,9 +23,8 @@ public class Exercise_02_14 {
         System.out.println("Enter height in inches");
         double height = input.nextDouble() * INCH;
 
-
         // compute BMI
-        double bmi = weight / (Math.pow(height,2));
+        double bmi = weight / (Math.pow(height, 2));
 
         // display results
         System.out.println("BMI is " + bmi);

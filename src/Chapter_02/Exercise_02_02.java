@@ -7,10 +7,9 @@ import static java.lang.Math.PI;
 /**
  * Write a program that reads the radius and length of a cylinder and computes
  * the area and volume using the following formulas:
- *
+ * <p>
  * area = radius * radius * phi
  * volume = area * length
- *
  */
 public class Exercise_02_02 {
     public static void main(String[] args) {

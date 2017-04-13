@@ -19,7 +19,7 @@ public class Exercise_02_07 {
 
         // Create constants of minutes in a year and a day
         final int YEAR_IN_MINUTES = 365 * 24 * 60;
-        final int DAY_IN_MINUTES = 24*60;
+        final int DAY_IN_MINUTES = 24 * 60;
 
         // Convert it to year and days
         int year = minutes / YEAR_IN_MINUTES;
@@ -27,6 +27,6 @@ public class Exercise_02_07 {
         int day = remainingminutes / DAY_IN_MINUTES;
 
         // Display the result
-        System.out.println(minutes + " minutes is approximately " + year + " years and " + day  + " days");
+        System.out.println(minutes + " minutes is approximately " + year + " years and " + day + " days");
     }
 }
