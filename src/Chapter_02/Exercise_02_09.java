@@ -11,7 +11,7 @@ import java.util.Scanner;
  * the ending velocity v1 in meters/second, and the time span t in seconds
  * and displays the average acceleration.
  */
-public class Excercise_02_09 {
+public class Exercise_02_09 {
 
     public static void main(String[] args) {
         // Create a new input Scanner

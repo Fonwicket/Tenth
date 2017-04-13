@@ -9,7 +9,7 @@ import java.util.Scanner;
  * Hint: use the % operator to extract the digits and use the /
  * to remove the extracted digit.
  */
-public class Excercise_02_06 {
+public class Exercise_02_06 {
 
     public static void main(String[] args) {
         // Make a new Scanner

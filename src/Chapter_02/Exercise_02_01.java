@@ -1,6 +1,6 @@
 package Chapter_02;
 
-/**
+/*
  *  Write a program that reads a Celsius degree in a double value from the console,
  *  then converts it to Fahrenheit and displays the result. The formula for the conversion is as follows:
  *
@@ -10,7 +10,7 @@ package Chapter_02;
 
 import java.util.Scanner;
 
-public class Excercise_02_01 {
+public class Exercise_02_01 {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

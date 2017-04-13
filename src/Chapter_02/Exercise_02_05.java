@@ -8,7 +8,7 @@ import java.util.Scanner;
  * 10  for subtotal and 15% for gratuity rate, the program displays $1.5 as
  * gratuity and $11,5 as total
  */
-public class Excercise_02_05 {
+public class Exercise_02_05 {
 
     public static void main(String[] args) {
         // Make a new Scanner

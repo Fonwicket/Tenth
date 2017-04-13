@@ -21,7 +21,7 @@ import java.util.Scanner;
  *    decimal point. For example, 5.0 / 4 is 1.25 and 10 / 4.0 is 2.5.
  */
 
-public class Excercise_02_11 {
+public class Exercise_02_11 {
     public static void main(String[] args)
     {
 

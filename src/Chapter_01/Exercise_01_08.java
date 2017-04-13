@@ -1,6 +1,6 @@
 package Chapter_01;
 
-public class Excercise_01_08
+public class Exercise_01_08
 {
     public static void main(String[] args)
     {

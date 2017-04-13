@@ -12,7 +12,7 @@ import static java.lang.Math.PI;
  * volume = area * length
  *
  */
-public class Excercise_02_02 {
+public class Exercise_02_02 {
     public static void main(String[] args) {
         // Create a new scanner
         Scanner input = new Scanner(System.in);

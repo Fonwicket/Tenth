@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Revise the program so it prompts the user to enter the time zone offset to GMT
  * and displays the time in the specified time zone.
  */
-public class Excercise_02_08 {
+public class Exercise_02_08 {
 
     public static void main(String[] args) {
         // Create a new Scanner

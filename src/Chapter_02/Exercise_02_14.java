@@ -8,7 +8,7 @@ import java.util.Scanner;
  * that prompts the user to enter a weight in pounds and height in inches and displays the BMI
  * Note that one pound is 0.45359237 kilograms and one inch is 0.0254 meters.
  */
-public class Excercise_02_14 {
+public class Exercise_02_14 {
     public static void main(String[] args) {
         // Create a new scanner
         Scanner input = new Scanner(System.in);

@@ -7,7 +7,7 @@ import java.util.Scanner;
  * The program prompts a user to enter a number in pounds, converts it to kilograms
  * and displays the result. One pound is 0.454 kilograms
  */
-public class Excercise_02_04 {
+public class Exercise_02_04 {
     public static void main(String[] args) {
         // Make a new Scanner
         Scanner input = new Scanner(System.in);

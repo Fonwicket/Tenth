@@ -23,7 +23,7 @@ import java.util.Scanner;
  * loop to simplify the code and display the account value for any month.)
  */
 
-public class Excercise_02_13
+public class Exercise_02_13
 {
     public static void main(String[] args)
     {

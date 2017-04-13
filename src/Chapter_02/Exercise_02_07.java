@@ -7,7 +7,7 @@ import java.util.Scanner;
  * and displays the number of years and days for the minutes.
  * For simplicity, assume a year has 365 days.
  */
-public class Excercise_02_07 {
+public class Exercise_02_07 {
 
     public static void main(String[] args) {
         // Make a new Scanner

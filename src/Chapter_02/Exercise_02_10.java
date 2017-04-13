@@ -13,7 +13,7 @@ import java.util.Scanner;
  * where Mis the weight of water in kilograms, temperatures are in Celsius,
  * and energy Q is measured in Joules.
  */
-public class Excercise_02_10 {
+public class Exercise_02_10 {
     public static void main(String[] args) {
         // Create a new input Scanner
         Scanner input = new Scanner(System.in);
