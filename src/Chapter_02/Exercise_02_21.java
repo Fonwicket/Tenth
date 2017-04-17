@@ -21,14 +21,14 @@ public class Exercise_02_21 {
         double investmentAmount = input.nextDouble();
 
         System.out.println("Enter annual interest rate in percentage: ");
-        double annualInterestRate = input.nextDouble();
+        double monthlyInterestRate = input.nextDouble();
+        monthlyInterestRate /= 1200;
 
         System.out.println("Enter number of years: ");
         double numberOfYears = input.nextDouble();
 
         // Compute the future investment value
-        double monthlyInterestRate = (1 + annualInterestRate)* Math.pow(1/12, 1) – 1;
-        double futureInvestmentValue = investmentAmount * Math.pow(1 + monthlyInterestRate, (numberOfYears * 12));
+        double futureInvestmentValue = investmentAmount * Math.pow(1 + monthlyInterestRate, numberOfYears * 12);
 
         // Display th results
         System.out.println("Accumulated value is " + futureInvestmentValue);
