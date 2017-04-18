@@ -1,9 +1,11 @@
 package Chapter_03;
+import java.util.Scanner;
+
 /**
  * The two roots of a quadratic equation ax2 + bx + c = 0 can be obtained using the following formula:
  * <p>
- * r1 = -b + √b2 - 4ac / 2a r1 = -b + Math.pow(Math.pow(b,2)-(4*a*c),0.5)
- * and r2 = -b - √b2 - 4ac / 2a
+ * r1 = -b + √b2 - 4ac / 2a **r1 = -b + Math.pow(Math.pow(b,2)-(4*a*c),0.5) / 2 * a**
+ * and r2 = -b - √b2 - 4ac / 2a **r2 = -b - Math.pow(Math.pow(b,2)-(4*a*c),0.5) / 2 * a**
  * b2 - 4ac is called the discriminant of the quadratic equation. If it is positive, the
  * equation has two real roots. If it is zero, the equation has one root. If it is negative,
  * the equation has no real roots.
@@ -16,6 +18,12 @@ package Chapter_03;
 public class Exercise_03_01 {
 
     public static void main(String[] args) {
+
+        // Create a new scanner
+        Scanner input = new Scanner(System.in);
+
+        // Get values for a, b and c
+
 
     }
 }
