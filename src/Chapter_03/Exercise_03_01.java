@@ -23,7 +23,27 @@ public class Exercise_03_01 {
         Scanner input = new Scanner(System.in);
 
         // Get values for a, b and c
+        System.out.println("Get a, b, c: ");
+        double a = input.nextDouble();
+        double b = input.nextDouble();
+        double c = input.nextDouble();
 
+        // Compute the discriminant
+        double discriminant = Math.pow(b, 2) - (4 * a * c);
+        System.out.print("The equation has ");
+
+        double r1 = (-b + Math.pow(discriminant, 0.5)) / (2 * a);
+        double r2 = (-b - Math.pow(discriminant, 0.5)) / (2 * a);
+
+        // Display correct output
+
+        if (discriminant > 0) {
+            System.out.println("two roots " + r1 + " and " + r2);
+        } else if (discriminant == 0) {
+            System.out.println("one root " + r1);
+        } else {
+            System.out.println("no real roots");
+        }
 
     }
 }
