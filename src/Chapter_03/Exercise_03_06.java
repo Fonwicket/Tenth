@@ -15,9 +15,13 @@ public class Exercise_03_06 {
         double weight = input.nextDouble();
 
         // Prompt the user to enter height in inches
-        System.out.print("Enter height in inches: ");
+        System.out.print("Enter feet: ");
+        double feet = input.nextDouble();
 
-        double height = input.nextDouble();
+        System.out.print("Enter inches: ");
+        double inches = input.nextDouble();
+
+
         final double KILOGRAMS_PER_POUND = 0.45359237;
         // Constant
         final double METERS_PER_INCH = 0.0254;
@@ -25,7 +29,7 @@ public class Exercise_03_06 {
 
         // Compute BMI
         double weightInKilograms = weight * KILOGRAMS_PER_POUND;
-        double heightInMeters = height * METERS_PER_INCH;
+        double heightInMeters = (feet * 12 + inches) * METERS_PER_INCH;
         double bmi = weightInKilograms / (heightInMeters * heightInMeters);
 
         // Display result
