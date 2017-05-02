@@ -10,6 +10,15 @@ public class Exercise_03_13 {
         // Create a Scanner
         Scanner input = new Scanner(System.in);
 
+        // Creating finals for overview
+        final double TAXRANGE1 = 0.10;
+        final double TAXRANGE2 = 0.15;
+        final double TAXRANGE3 = 0.25;
+        final double TAXRANGE4 = 0.28;
+        final double TAXRANGE5 = 0.33;
+        final double TAXRANGE6 = 0.35;
+
+
         // Prompt the user to enter filing status
         System.out.print("(0-single filer, 1-married jointly or "
                 + "qualifying widow(er), 2-married separately, 3-head of " + "household) Enter the filing status: ");
@@ -21,41 +30,94 @@ public class Exercise_03_13 {
 
         // Compute tax
         double tax = 0;
+        int t1, t2, t3, t4, t5;
         if (status == 0) {
+            // set thresholds income
+            t1 = 8350;
+            t2 = 33950;
+            t3 = 82250;
+            t4 = 171550;
+            t5 = 372950;
+
             // Compute tax for single filers
-            if (income <= 8350)
-                tax = income * 0.10;
-
-            else if (income <= 33950)
-                tax = 8350 * 0.10 + (income - 8350) * 0.15;
-
-            else if (income <= 82250)
-                tax = 8350 * 0.10 + (33950 - 8350) * 0.15 + (income - 33950) * 0.25;
-
-            else if (income <= 171550)
-                tax = 8350 * 0.10 + (33950 - 8350) * 0.15 + (82250 - 33950) * 0.25 + (income - 82250) * 0.28;
-            else if (income <= 372950)
-                tax = 8350 * 0.10 + (33950 - 8350) * 0.15 + (82250 - 33950) * 0.25 + (171550 - 82250) * 0.28
-                        + (income - 171550) * 0.33;
-
+            if (income <= t1)
+                tax = income * TAXRANGE1;
+            else if (income <= t2)
+                tax = t1 * TAXRANGE1 + (income - t1) * TAXRANGE2;
+            else if (income <= t3)
+                tax = t1 * TAXRANGE1 + (t2 - t1) * TAXRANGE2 + (income - t2) * TAXRANGE3;
+            else if (income <= t4)
+                tax = t1 * TAXRANGE1 + (t2 - t1) * TAXRANGE2 + (t3 - t2) * TAXRANGE3 + (income - t3) * TAXRANGE4;
+            else if (income <= t5)
+                tax = t1 * TAXRANGE1 + (t2 - t1) * TAXRANGE2 + (t3 - t2) * TAXRANGE3 + (t4 - t3) * TAXRANGE4 + (income - t4) * TAXRANGE5;
             else
-                tax = 8350 * 0.10 + (33950 - 8350) * 0.15 + (82250 - 33950) * 0.25 + (171550 - 82250) * 0.28
-                        + (372950 - 171550) * 0.33 + (income - 372950) * 0.35;
+                tax = t1 * TAXRANGE1 + (t2 - t1) * TAXRANGE2 + (t3 - t2) * TAXRANGE3 + (t4 - t3) * TAXRANGE4 + (t5 - t4) * TAXRANGE5 + (income - t5) * TAXRANGE6;
 
         } else if (status == 1) {
-            // Left as an exercise
+            // set thresholds income
+            t1 = 16700;
+            t2 = 67900;
+            t3 = 137050;
+            t4 = 208850;
+            t5 = 372950;
 
             // Compute tax for married file jointly or qualifying widow(er)
+            if (income <= t1)
+                tax = income * TAXRANGE1;
+            else if (income <= t2)
+                tax = t1 * TAXRANGE1 + (income - t1) * TAXRANGE2;
+            else if (income <= t3)
+                tax = t1 * TAXRANGE1 + (t2 - t1) * TAXRANGE2 + (income - t2) * TAXRANGE3;
+            else if (income <= t4)
+                tax = t1 * TAXRANGE1 + (t2 - t1) * TAXRANGE2 + (t3 - t2) * TAXRANGE3 + (income - t3) * TAXRANGE4;
+            else if (income <= t5)
+                tax = t1 * TAXRANGE1 + (t2 - t1) * TAXRANGE2 + (t3 - t2) * TAXRANGE3 + (t4 - t3) * TAXRANGE4 + (income - t4) * TAXRANGE5;
+            else
+                tax = t1 * TAXRANGE1 + (t2 - t1) * TAXRANGE2 + (t3 - t2) * TAXRANGE3 + (t4 - t3) * TAXRANGE4 + (t5 - t4) * TAXRANGE5 + (income - t5) * TAXRANGE6;
 
         } else if (status == 2) {
-            // Compute tax for married separately
+            // set thresholds income
+            t1 = 8350;
+            t2 = 33950;
+            t3 = 68525;
+            t4 = 104425;
+            t5 = 186475;
 
-            // Left as an exercise
+            // Compute tax for married separately
+            if (income <= t1)
+                tax = income * TAXRANGE1;
+            else if (income <= t2)
+                tax = t1 * TAXRANGE1 + (income - t1) * TAXRANGE2;
+            else if (income <= t3)
+                tax = t1 * TAXRANGE1 + (t2 - t1) * TAXRANGE2 + (income - t2) * TAXRANGE3;
+            else if (income <= t4)
+                tax = t1 * TAXRANGE1 + (t2 - t1) * TAXRANGE2 + (t3 - t2) * TAXRANGE3 + (income - t3) * TAXRANGE4;
+            else if (income <= t5)
+                tax = t1 * TAXRANGE1 + (t2 - t1) * TAXRANGE2 + (t3 - t2) * TAXRANGE3 + (t4 - t3) * TAXRANGE4 + (income - t4) * TAXRANGE5;
+            else
+                tax = t1 * TAXRANGE1 + (t2 - t1) * TAXRANGE2 + (t3 - t2) * TAXRANGE3 + (t4 - t3) * TAXRANGE4 + (t5 - t4) * TAXRANGE5 + (income - t5) * TAXRANGE6;
 
         } else if (status == 3) {
-            // Compute tax for head of household
+            // set thresholds income
+            t1 = 11950;
+            t2 = 45500;
+            t3 = 117450;
+            t4 = 190200;
+            t5 = 372950;
 
-            // Left as an exercise
+            // Compute tax for head of household
+            if (income <= t1)
+                tax = income * TAXRANGE1;
+            else if (income <= t2)
+                tax = t1 * TAXRANGE1 + (income - t1) * TAXRANGE2;
+            else if (income <= t3)
+                tax = t1 * TAXRANGE1 + (t2 - t1) * TAXRANGE2 + (income - t2) * TAXRANGE3;
+            else if (income <= t4)
+                tax = t1 * TAXRANGE1 + (t2 - t1) * TAXRANGE2 + (t3 - t2) * TAXRANGE3 + (income - t3) * TAXRANGE4;
+            else if (income <= t5)
+                tax = t1 * TAXRANGE1 + (t2 - t1) * TAXRANGE2 + (t3 - t2) * TAXRANGE3 + (t4 - t3) * TAXRANGE4 + (income - t4) * TAXRANGE5;
+            else
+                tax = t1 * TAXRANGE1 + (t2 - t1) * TAXRANGE2 + (t3 - t2) * TAXRANGE3 + (t4 - t3) * TAXRANGE4 + (t5 - t4) * TAXRANGE5 + (income - t5) * TAXRANGE6;
 
         } else {
             System.out.println("Error: invalid status");
